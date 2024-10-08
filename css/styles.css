@@ -4,6 +4,24 @@ body {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 a {
@@ -13,6 +31,21 @@ a {
 address {
   font-style: normal;
 }
+
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.container-narrow {
+  width: 1086px;
+  padding-left: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,6 +74,11 @@ address {
 }
 
 /* HEADER */
+
+.header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -69,16 +107,21 @@ address {
 /* --------------- HERO ---------------- */
 .hero {
   background-color: #1e1823;
+  border-radius: 30px;
+  padding-top: 375px;
+  padding-bottom: 46px;
+  margin-bottom: 72px;
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
 }
 .hero-btn {
-  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -104,6 +147,8 @@ address {
 /* -------------- FEATURES ------------- */
 .features {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .features-list {
 }
@@ -113,6 +158,7 @@ address {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 .features-item-text {
   font-weight: 400;
@@ -123,9 +169,11 @@ address {
 
 /* ---------------- TASTE ---------------- */
 .taste {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
-
 .taste-title {
+  margin-bottom: 28px;
 }
 
 .taste-text {
@@ -135,12 +183,16 @@ address {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
 
 .taste-list {
 }
 
 .taste-item {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 28px 32px;
 }
 
 .taste-item-image {
@@ -158,9 +210,12 @@ address {
 /* ---------------- MADE -------------- */
 
 .made {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .made-title {
+  margin-bottom: 50px;
 }
 
 .made-image {
@@ -171,12 +226,18 @@ address {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
 
 .made-list {
 }
 
 .made-item {
+  margin-bottom: 24px;
+}
+
+.made-item:last-child {
+  margin-bottom: 0;
 }
 .made-item-text {
   font-size: 14px;
@@ -188,11 +249,15 @@ address {
 /* REVIEWS */
 
 .reviews {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 .reviews-title {
+  margin-bottom: 50px;
 }
 
 .reviews-list {
+  margin-bottom: 50px;
 }
 .reviews-item {
 }
