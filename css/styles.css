@@ -32,6 +32,10 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1166px;
   padding-left: 15px;
@@ -40,7 +44,7 @@ address {
 }
 
 .container-narrow {
-  width: 1086px;
+  width: 1094px;
   padding-left: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -79,12 +83,23 @@ address {
   padding-top: 28px;
   padding-bottom: 28px;
 }
+.header-navigation {
+  display: flex;
+}
+
+.header-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  margin-right: 100px;
 }
 
 .header-logo-italic {
@@ -104,6 +119,16 @@ address {
   color: #fd9222;
 }
 
+.header-soc-list {
+  display: flex;
+  margin-left: auto;
+  gap: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 /* --------------- HERO ---------------- */
 .hero {
   background-color: #1e1823;
@@ -120,16 +145,24 @@ address {
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
+  max-width: 484px;
 }
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  padding: 14px 40px;
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
 }
 .hero-anchor-link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  padding: 14px 40px;
+  border: 1px solid #fff;
+  border-radius: 100px;
 }
 
 .hero-anchor-link:focus {
@@ -142,6 +175,13 @@ address {
   line-height: 1.23;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 /* -------------- FEATURES ------------- */
@@ -151,8 +191,11 @@ address {
   padding-bottom: 50px;
 }
 .features-list {
+  display: flex;
+  gap: 70px;
 }
 .features-item {
+  width: calc((100% - 140px) / 3);
 }
 .features-subtitle {
   font-weight: 600;
@@ -173,7 +216,8 @@ address {
   padding-bottom: 50px;
 }
 .taste-title {
-  margin-bottom: 28px;
+  max-width: 411px;
+  margin: 0 auto 28px auto;
 }
 
 .taste-text {
@@ -183,19 +227,24 @@ address {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
-  margin-bottom: 50px;
+  max-width: 486px;
+  margin: 0 auto 50px;
 }
 
 .taste-list {
+  display: flex;
+  gap: 19px;
 }
 
 .taste-item {
   border: 1px solid #fd9222;
   border-radius: 15px;
   padding: 28px 32px;
+  width: calc((100% - 3 * 19px) / 4);
 }
 
 .taste-item-image {
+  margin: 0 auto 36px;
 }
 
 .taste-subtitle {
