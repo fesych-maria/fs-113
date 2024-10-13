@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 ul {
@@ -39,14 +40,14 @@ img {
 .container {
   width: 1166px;
   padding-left: 15px;
-  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
 .container-narrow {
   width: 1094px;
   padding-left: 15px;
-  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -100,10 +101,12 @@ img {
   letter-spacing: -0.03em;
   color: #111;
   margin-right: 100px;
+  display: flex;
 }
 
 .header-logo-italic {
   font-style: italic;
+  margin-right: 6px;
 }
 
 .header-menu-link {
@@ -236,15 +239,27 @@ img {
   gap: 19px;
 }
 
-.taste-item {
+.taste-item:nth-child(2n + 2) {
   border: 1px solid #fd9222;
+  background: #fff;
+}
+
+.taste-item:first-child {
+  background: #fd9222;
+}
+
+.taste-item {
   border-radius: 15px;
   padding: 28px 32px;
   width: calc((100% - 3 * 19px) / 4);
 }
 
+.taste-item:nth-child(3) {
+  background: #1e1823;
+}
+
 .taste-item-image {
-  margin: 0 auto 36px;
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -254,6 +269,7 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  display: inline;
 }
 
 /* ---------------- MADE -------------- */
@@ -263,11 +279,21 @@ img {
   padding-bottom: 50px;
 }
 
+.made-container {
+  display: flex;
+  gap: 20px;
+}
 .made-title {
   margin-bottom: 50px;
 }
 
 .made-image {
+}
+
+.made-list-container {
+  padding: 32px;
+  background: #fff;
+  border-radius: 15px;
 }
 
 .made-subtitle {
@@ -276,6 +302,7 @@ img {
   line-height: 1.33;
   color: #111;
   margin-bottom: 28px;
+  max-width: 350px;
 }
 
 .made-list {
@@ -307,10 +334,23 @@ img {
 
 .reviews-list {
   margin-bottom: 50px;
+  display: flex;
+  gap: 28px;
 }
 .reviews-item {
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 0 24px 24px;
+  width: calc((100% - 2 * 28px) / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .reviews-image {
+  margin-bottom: 18px;
 }
 .reviews-subtitle {
   font-weight: 600;
@@ -318,7 +358,9 @@ img {
   line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
 }
+
 .reviews-text {
   font-size: 14px;
   line-height: 1.29;
@@ -330,6 +372,11 @@ img {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* FOOTER */
