@@ -78,7 +78,7 @@ img {
   color: #fd9222;
 }
 
-/* HEADER */
+/* ------------------- HEADER --------------------------- */
 
 .header {
   padding-top: 28px;
@@ -158,6 +158,7 @@ img {
   background: #fd9222;
   border-radius: 100px;
   border: none;
+  cursor: pointer;
 }
 .hero-anchor-link {
   font-weight: 600;
@@ -256,6 +257,10 @@ img {
 
 .taste-item:nth-child(3) {
   background: #1e1823;
+}
+
+.taste-item:nth-child(2n + 1) .taste-subtitle {
+  color: #fff;
 }
 
 .taste-item-image {
@@ -377,11 +382,13 @@ img {
   padding: 14px 40px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
-/* FOOTER */
+/* ------------------- FOOTER -------------------- */
 .footer {
   background-color: #1e1823;
+  padding: 50px 0 86px;
 }
 .footer-title {
   font-weight: 500;
@@ -389,6 +396,7 @@ img {
   line-height: 1.21429;
   letter-spacing: -0.02em;
   color: #fff;
+  margin-bottom: 54px;
 }
 
 .footer-title span {
@@ -398,8 +406,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: #fff;
+  margin-bottom: 14px;
 }
 .footer-address {
 }
@@ -413,16 +421,30 @@ img {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  text-align: center;
   color: #fff;
 }
 
+.footer-divide-line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+}
 .footer-navigation {
 }
 .footer-menu-list {
+  display: flex;
+  gap: 24px;
 }
 .footer-menu-item {
 }
+
+.footer-container {
+  display: flex;
+}
+
+.footer-container-contacts {
+  margin-left: auto;
+}
+
 .footer-menu-link {
   font-weight: 500;
   font-size: 14px;
