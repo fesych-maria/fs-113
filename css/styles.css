@@ -45,7 +45,7 @@ img {
 }
 
 .container-narrow {
-  width: 1094px;
+  width: 1084px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -87,11 +87,11 @@ img {
 .header-container{
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .header-navigation {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -99,7 +99,7 @@ img {
   display: flex;
   align-items: center;
   gap: 24px;
-  /* margin-left: auto; */
+  margin-right: 90px;
 }
 
 .header-logo {
@@ -109,13 +109,13 @@ img {
   letter-spacing: -0.03em;
   color: #111;
   display: flex;
-  padding: 28px 0;
-  margin-right: 0;
+  align-items: center;
+  padding: 30px 0;
 }
 
 .header-logo-italic {
   font-style: italic;
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
 .header-menu-link {
@@ -124,7 +124,7 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #111;
-  padding: 32px 0;
+  padding: 30px 0;
 }
 
 .header-menu-link:hover,
@@ -133,9 +133,14 @@ img {
 }
 
 .header-soc-list {
-  margin-left: auto;
   display: flex;
   gap: 24px;
+  margin-left: auto;
+}
+
+.header-soc-item{
+    width: 24px;
+  height: 24px;
 }
 
 .soc-icon{
@@ -147,10 +152,15 @@ img {
 /* --------------- HERO ---------------- */
 .hero {
   background-color: #1e1823;
+  background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url(../images/bg-com.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   border-radius: 30px;
   padding-top: 375px;
   padding-bottom: 46px;
-  margin-bottom: 72px;
+  max-width: 1200px;
+  margin: 0 auto 72px;
 }
 
 .hero-title {
@@ -194,6 +204,20 @@ img {
   margin-left: auto;
 }
 
+.scrolling-icon-link{
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+}
+
+.scrolling-icon{
+  fill: #fd9222;
+}
+
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -206,13 +230,33 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.features > .container{
+  width: 1130px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .features-list {
   display: flex;
-  gap: 70px;
+  gap: 88px;
 }
+
 .features-item {
-  width: calc((100% - 140px) / 3);
+  width: calc((100% - 176px) / 3);
+  position: relative;
 }
+
+.features-item::after{
+  content: '';
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 124px;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .features-subtitle {
   font-weight: 600;
   font-size: 18px;
