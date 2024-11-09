@@ -242,19 +242,33 @@ img {
   gap: 88px;
 }
 
-.features-item {
-  width: calc((100% - 176px) / 3);
-  position: relative;
-}
-
-.features-item::after{
+.features-item:not(:last-child)::after{
   content: '';
   border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 124px;
-  transform: rotate(-90deg);
+  height: 124px;
   position: absolute;
-  top: 0;
-  right: 0;
+  right: -18px;
+  top: 60px;
+}
+
+.features-item{
+  position: relative;
+  width: calc((100% - 2 * 88px) / 3);
+}
+
+.features-icon-container{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.features-icon{
+  fill: #fd9222;
 }
 
 .features-subtitle {
@@ -309,6 +323,8 @@ img {
   border-radius: 15px;
   padding: 28px 32px;
   width: calc((100% - 3 * 19px) / 4);
+  overflow: hidden;
+  position: relative;
 }
 
 .taste-item:nth-child(3) {
@@ -330,7 +346,91 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
-  display: inline;
+  /* display: inline; */
+}
+
+.taste-overlay{
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* top: -1px;
+  left: -1px; */
+  /* width: calc(100% + 2px);
+  height: calc(100% + 2px); */
+  z-index: 999;
+  overflow: auto;
+  transform: translateY(100%);
+}
+
+.taste-item:hover .taste-overlay{
+  transform: translateY(0);
+}
+
+.taste-overlay-title{
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.taste-overlay-category{
+  background-color: #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+  height: 24px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+
+.chocolate-category{
+  width: 81px;
+}
+
+.milk-category{
+  width: 54px;
+}
+
+.nuts-category{
+  width: 55px;
+}
+
+.sweet-category{
+  width: 114px;
+}
+
+.taste-overlay-benefits{
+  background-color: #fafafa;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  padding: 5px 15px;
+  width: 93px;
+  height: 24px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+  text-align: center;
+}
+
+.taste-overlay-container{
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.taste-overlay-text{
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
 }
 
 /* ---------------- MADE -------------- */
@@ -371,6 +471,26 @@ img {
 
 .made-item {
   margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+.made-item-dot{
+  width: 8px;
+  height: 8px;
+}
+
+.made-item-dot::before{
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  top: 5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
 }
 
 .made-item:last-child {
